@@ -56,6 +56,7 @@ cargo build --release
 
 ## Структура проекта
 
+\'\'\'
 anatolevich-convert/
 ├── Cargo.toml
 ├── install.sh
@@ -86,6 +87,7 @@ anatolevich-convert/
         ├── libreoffice.rs
         ├── pandoc.rs
         └── image_backend.rs
+\'\'\'        
 
 ## Тестирование
 
