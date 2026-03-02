@@ -27,27 +27,24 @@
 - **Pandoc** — для MD, HTML, TXT, EPUB
 - **Rust 1.70+** — для сборки
 
-\`\`\`bash
 sudo dnf install libreoffice pandoc gtk4-devel
-\`\`\`
+
 
 ## Установка
 
-\`\`\`bash
+
 git clone https://github.com/your-username/anatolevich-convert.git
 cd anatolevich-convert
 chmod +x install.sh
 ./install.sh
-\`\`\`
 
 После установки найдите «AnatolevichConvert» в меню GNOME (Super → набрать "Anatolevich").
 
 ## Сборка вручную
 
-\`\`\`bash
+
 cargo build --release
 ./target/release/anatolevich-convert
-\`\`\`
 
 ## Использование
 
@@ -59,7 +56,6 @@ cargo build --release
 
 ## Структура проекта
 
-\`\`\`
 anatolevich-convert/
 ├── Cargo.toml
 ├── install.sh
@@ -90,13 +86,10 @@ anatolevich-convert/
         ├── libreoffice.rs
         ├── pandoc.rs
         └── image_backend.rs
-\`\`\`
 
 ## Тестирование
 
-\`\`\`bash
 cargo test
-\`\`\`
 
 70 юнит-тестов покрывают: форматы, конвертацию, переименование, историю, настройки, безопасность.
 
