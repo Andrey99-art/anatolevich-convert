@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Main gradient - deep blue to teal -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a5276"/>
+      <stop offset="50%" stop-color="#2471a3"/>
+      <stop offset="100%" stop-color="#17a589"/>
+    </linearGradient>
+    <!-- Arrow gradient -->
+    <linearGradient id="arrow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f0f0f0"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <!-- Document shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+    <!-- Subtle glow on arrow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect x="4" y="4" width="120" height="120" rx="24" ry="24" fill="url(#bg)"/>
+
+  <!-- Subtle inner border -->
+  <rect x="6" y="6" width="116" height="116" rx="22" ry="22"
+        fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+
+  <!-- Left document (source) -->
+  <g filter="url(#shadow)">
+    <!-- Page body -->
+    <path d="M22,30 L22,98 Q22,100 24,100 L50,100 Q52,100 52,98 L52,38 L44,30 Z"
+          fill="#e8f0f8" stroke="#b0c4d8" stroke-width="0.5"/>
+    <!-- Folded corner -->
+    <path d="M44,30 L44,38 L52,38" fill="#c8d8e8" stroke="#b0c4d8" stroke-width="0.5"/>
+    <!-- Text lines -->
+    <line x1="28" y1="48" x2="46" y2="48" stroke="#7fa8c9" stroke-width="2" stroke-linecap="round"/>
+    <line x1="28" y1="56" x2="44" y2="56" stroke="#7fa8c9" stroke-width="2" stroke-linecap="round"/>
+    <line x1="28" y1="64" x2="46" y2="64" stroke="#7fa8c9" stroke-width="2" stroke-linecap="round"/>
+    <line x1="28" y1="72" x2="40" y2="72" stroke="#7fa8c9" stroke-width="2" stroke-linecap="round"/>
+    <line x1="28" y1="80" x2="44" y2="80" stroke="#7fa8c9" stroke-width="2" stroke-linecap="round"/>
+    <line x1="28" y1="88" x2="38" y2="88" stroke="#7fa8c9" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right document (target) -->
+  <g filter="url(#shadow)">
+    <!-- Page body -->
+    <path d="M76,30 L76,98 Q76,100 78,100 L104,100 Q106,100 106,98 L106,38 L98,30 Z"
+          fill="#ffffff" stroke="#b0c4d8" stroke-width="0.5"/>
+    <!-- Folded corner -->
+    <path d="M98,30 L98,38 L106,38" fill="#d8e8f0" stroke="#b0c4d8" stroke-width="0.5"/>
+    <!-- Checkmark lines (converted) -->
+    <line x1="82" y1="48" x2="100" y2="48" stroke="#17a589" stroke-width="2" stroke-linecap="round"/>
+    <line x1="82" y1="56" x2="98" y2="56" stroke="#17a589" stroke-width="2" stroke-linecap="round"/>
+    <line x1="82" y1="64" x2="100" y2="64" stroke="#17a589" stroke-width="2" stroke-linecap="round"/>
+    <line x1="82" y1="72" x2="94" y2="72" stroke="#17a589" stroke-width="2" stroke-linecap="round"/>
+    <line x1="82" y1="80" x2="98" y2="80" stroke="#17a589" stroke-width="2" stroke-linecap="round"/>
+    <line x1="82" y1="88" x2="92" y2="88" stroke="#17a589" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Conversion arrow (center) -->
+  <g filter="url(#glow)">
+    <path d="M56,62 L66,62 L66,56 L74,65 L66,74 L66,68 L56,68 Z"
+          fill="url(#arrow)" stroke="none"/>
+  </g>
+
+  <!-- Small checkmark badge on right doc -->
+  <circle cx="100" cy="94" r="8" fill="#27ae60"/>
+  <path d="M96,94 L99,97 L104,91" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

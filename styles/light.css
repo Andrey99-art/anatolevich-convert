@@ -1,0 +1,119 @@
+/* ── Light theme — clean, high contrast ────────────────────────────────── */
+
+.main-container {
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+}
+
+headerbar {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.boxed-list {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.boxed-list row {
+    color: #1a1a1a;
+}
+
+.boxed-list row:hover {
+    background-color: #f0f0f0;
+}
+
+.dim-label {
+    color: #777777;
+}
+
+label {
+    color: #1a1a1a;
+}
+
+/* Основные кнопки (Выбрать файлы, Очистить) */
+button {
+    background-color: #ff7800;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #e66a00;
+}
+
+/* Конвертировать — зелёный акцент, выделяется как главное действие */
+button.suggested-action {
+    background-color: #2ec27e;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+button.suggested-action:hover {
+    background-color: #26a269;
+}
+
+/* Кнопки в headerbar (тема, обои, закрытие) — нейтральные */
+headerbar button {
+    background-color: transparent;
+    color: #1a1a1a;
+    border: 1px solid #c0c0c0;
+}
+
+headerbar button:hover {
+    background-color: alpha(#000000, 0.08);
+}
+
+/* Кнопка удаления ✕ на строках файлов */
+button.flat {
+    background-color: transparent;
+    color: #ff7800;
+    border: none;
+}
+
+button.flat:hover {
+    background-color: alpha(#ff7800, 0.1);
+}
+
+progressbar trough {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+
+progressbar progress {
+    background-color: #3584e4;
+    border-radius: 4px;
+}
+
+progressbar text {
+    color: #1a1a1a;
+}
+
+dropdown {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid #c0c0c0;
+    border-radius: 6px;
+}
+
+dropdown:hover {
+    border-color: #3584e4;
+}
+
+dropdown popover contents {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+scrolledwindow {
+    background-color: transparent;
+}
+
+.drop-highlight {
+    background-color: alpha(#3584e4, 0.08);
+}

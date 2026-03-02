@@ -1,0 +1,58 @@
+/* ── Format badges ─────────────────────────────────────────────────────── */
+.badge-document {
+    background-color: #3584e4;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.badge-spreadsheet {
+    background-color: #33d17a;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.badge-presentation {
+    background-color: #ff7800;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.badge-image {
+    background-color: #9141ac;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.badge-unknown {
+    background-color: #888888;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+/* ── UI elements ───────────────────────────────────────────────────────── */
+.drop-highlight {
+    border: 2px dashed #3584e4;
+    border-radius: 8px;
+}
+
+.remove-btn {
+    min-width: 24px;
+    min-height: 24px;
+    padding: 0;
+    border-radius: 12px;
+}

@@ -1,0 +1,11 @@
+[package]
+name = "anatolevich-convert"
+version = "0.1.0"
+edition = "2021"
+description = "Document converter with native GNOME UI"
+
+[dependencies]
+gtk = { version = "0.9", package = "gtk4", features = ["v4_12"] }
+thiserror = "2"
+image = "0.25"
+rayon = "1.10"

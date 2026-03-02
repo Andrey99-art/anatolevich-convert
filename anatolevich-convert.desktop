@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=AnatolevichConvert
+Name[ru]=АнатолевичКонверт
+Comment=Fast offline document converter with batch processing
+Comment[ru]=Быстрый оффлайн конвертер документов с пакетной обработкой
+Exec=anatolevich-convert
+Icon=anatolevich-convert
+Terminal=false
+Type=Application
+Categories=Utility;Office;GTK;
+Keywords=convert;pdf;docx;document;converter;image;spreadsheet;
+Keywords[ru]=конвертер;pdf;docx;документ;конвертация;изображение;таблица;
+StartupNotify=true
+MimeType=application/pdf;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/vnd.openxmlformats-officedocument.presentationml.presentation;application/vnd.oasis.opendocument.text;application/vnd.oasis.opendocument.spreadsheet;application/vnd.oasis.opendocument.presentation;text/plain;text/markdown;text/html;text/csv;image/jpeg;image/png;image/webp;image/svg+xml;image/bmp;image/tiff;

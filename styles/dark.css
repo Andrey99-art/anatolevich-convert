@@ -1,0 +1,77 @@
+/* ── Dark theme — Catppuccin Mocha inspired ────────────────────────────── */
+
+.main-container {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+
+headerbar {
+    background-color: #181825;
+    color: #cdd6f4;
+}
+
+.boxed-list {
+    background-color: #313244;
+    color: #cdd6f4;
+}
+
+.boxed-list row {
+    color: #cdd6f4;
+}
+
+.dim-label {
+    color: #a6adc8;
+}
+
+label {
+    color: #cdd6f4;
+}
+
+button {
+    background-color: #45475a;
+    color: #cdd6f4;
+}
+
+button.suggested-action {
+    background-color: #3584e4;
+    color: white;
+}
+
+button.flat {
+    background-color: transparent;
+    color: #a6adc8;
+}
+
+button.flat:hover {
+    background-color: alpha(#ffffff, 0.08);
+}
+
+progressbar trough {
+    background-color: #313244;
+}
+
+progressbar progress {
+    background-color: #3584e4;
+}
+
+progressbar text {
+    color: #cdd6f4;
+}
+
+dropdown {
+    background-color: #45475a;
+    color: #cdd6f4;
+}
+
+dropdown popover contents {
+    background-color: #313244;
+    color: #cdd6f4;
+}
+
+scrolledwindow {
+    background-color: transparent;
+}
+
+.drop-highlight {
+    background-color: alpha(#3584e4, 0.1);
+}
